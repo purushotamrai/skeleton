@@ -69,12 +69,12 @@ $info = array(
 
   // CSS files (excluding @import) to rewrite with new color scheme.
   'css' => array(
-    'color/colors.css',
+    'css/colors.css',
   ),
   
   // Files to copy.
   'copy' => array(
-    'logo.png',
+    'logo.svg',
   ),
 
   // Gradient definitions.
@@ -104,5 +104,13 @@ $info = array(
 	'preview_html' => 'color/preview.html',
 
   // Base file for image generation.
-  'base_image' => 'color/base.png',
+	// Attachments.
+	'#attached' => [
+		'drupalSettings' => [
+			'color' => [
+				// Put the logo path into JavaScript for the live preview.
+				'logo' => theme_get_setting('logo.url', 'bartik'),
+			],
+		],
+	],
 );

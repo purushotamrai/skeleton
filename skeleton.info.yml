@@ -3,7 +3,6 @@ type: theme
 description: Skeleton is a powerful, clean, responsive theme.
 core: 8.x
 screenshot: screenshot.png
-logo: logo.png
 base theme: classy
 
 # Regions
