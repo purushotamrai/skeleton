@@ -3,16 +3,20 @@ type: theme
 description: Skeleton is a powerful, clean, responsive theme.
 core: 8.x
 screenshot: screenshot.png
+logo: logo.png
 base theme: classy
 
 # Regions
 regions:
   header_top_left: 'Header top left'
   header_top_right: 'Header top right'
-  header_right: 'Header right'
+  logo: 'Logo'
+  header_right: 'Header Right'
   header: 'Header'
-  highlighted: 'Highlighted'
   sidebar_first: 'Sidebar First'
+  breadcrumb: 'Breadcrumb'
+  highlighted: 'Highlighted'
+  help: 'Help'
   content: 'Content'
   sidebar_second: 'Sidebar Second'
   featured_left: 'Featured Left'
@@ -21,9 +25,6 @@ regions:
   footer_second: 'Footer second'
   footer_third: 'Footer third'
   footer: 'Footer'
-  help: 'Help'
-  page_top: 'Page Top'
-  page_bottom: 'Page Bottom'
 
 # Libraries
 libraries:
