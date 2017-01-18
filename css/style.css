@@ -458,7 +458,7 @@ display: block; font-weight: bold; text-shadow: 1px 1px 0px #fff; outline:none; 
 
 #navigation ul li:hover li a, #navigation ul.sf-menu li li a { color: #595959; font-weight: normal; }
 
-#navigation ul li a.active, #navigation ul.sf-menu li a.active { color: #333333; background-color: #ffffff; text-shadow: 1px 1px 0px #ffffff; }
+#navigation ul li a.is-active, #navigation ul.sf-menu li a.active { color: #333333; background-color: #ffffff; text-shadow: 1px 1px 0px #ffffff; }
 
 #navigation ul ul { position: absolute; top: -999em; width: 230px; }
 
@@ -468,7 +468,7 @@ display: block; font-weight: bold; text-shadow: 1px 1px 0px #fff; outline:none; 
 
 #navigation ul.sf-menu li, #navigation ul li  { float: left; position: relative; }
 
-#navigation ul.sf-menu a, #navigation ul a { display: block; position: relative; }
+#navigation ul.sf-menu a, #navigation ul a { display: block; position: relative; background: none;}
 
 #navigation ul.sf-menu li:hover ul,
 #navigation ul.sf-menu li.sfHover ul,

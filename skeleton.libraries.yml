@@ -2,7 +2,7 @@ global-styling:
   Version: 1.x
   css:
     theme:
-      css/skeleton.css.css: {}
+      css/skeleton.css: {}
       css/style.css: {}
       css/buttons.css: {}
       css/layout.css: {}
