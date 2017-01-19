@@ -21,6 +21,42 @@ function skeleton_page_attachments_alter(array &$page) {
     ],
     'system_meta_content_type',
   ];
+  $page['#attached']['html_head'][] = [
+    [
+      '#tag' => 'meta',
+      '#attributes' => [
+        'name' =>  'MobileOptimized',
+        'content' =>  'width'
+      ],
+    ],
+  ];
+  $page['#attached']['html_head'][] = [
+    [
+      '#tag' => 'meta',
+      '#attributes' => [
+        'name' =>  'HandheldFriendly',
+        'content' =>  'true'
+      ],
+    ],
+  ];
+  $page['#attached']['html_head'][] = [
+    [
+      '#tag' => 'meta',
+      '#attributes' => [
+        'name' =>  'viewport',
+        'content' =>  'width=device-width, initial-scale=1'
+      ],
+    ],
+  ];
+
+  // Add Javascript for responsive mobile menu
+  if (theme_get_setting('responsive_menu_state')) {
+    $page['#attached']['library'][] = 'skeleton/mobile';
+    $switchwidth = (int) theme_get_setting('responsive_menu_switchwidth', 'skeleton');
+    $topoptiontext = theme_get_setting('responsive_menu_topoptiontext', 'skeleton');
+    $page['#attached']['drupalSettings']['skeleton']['topoptiontext'] = $topoptiontext;
+    $page['#attached']['drupalSettings']['skeleton']['switchwidth'] = $switchwidth;
+  }
 }
 
 /**

@@ -100,6 +100,8 @@ text-shadow: 1px 1px 0px #fff; }
 
 #navigation { margin-bottom: 20px; clear: both; }
 
+#navigation select { border: black; background: #e8e8e8; }
+
 /* Main */
 
 #wrap { border-top:5px solid; }

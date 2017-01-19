@@ -17,3 +17,12 @@ color.preview:
     color/preview.js: {}
   dependencies:
     - color/drupal.color
+
+mobile:
+  js:
+    //cdn.rawgit.com/mattkersley/Responsive-Menu/master/jquery.mobilemenu.min.js: { type: external, minified: true }
+    js/skeleton.mobile.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
