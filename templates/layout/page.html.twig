@@ -83,9 +83,6 @@
     {% endif %}
 
     <div id="content" {{ attributes.setAttribute('class', page.content.attributes.class) }}>
-      {% if page.breadcrumb %}
-        {{ page.breadcrumb }}
-      {% endif %}
       <div id="main">
         {% if page.highlighted %}
           {{ page.highlighted }}

@@ -13,7 +13,6 @@ regions:
   header_right: 'Header Right'
   header: 'Header'
   sidebar_first: 'Sidebar First'
-  breadcrumb: 'Breadcrumb'
   highlighted: 'Highlighted'
   help: 'Help'
   content: 'Content'
