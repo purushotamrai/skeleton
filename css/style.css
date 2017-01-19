@@ -38,7 +38,7 @@ font: 12px/24px Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida
 
 hr { border: solid #DDD; clear: both; margin: 10px 0 30px; height: 0; border-width: 1px 0 0; }
 
-.field-type-taxonomy-term-reference .field-item { float: left; padding: 0 1em 0 0; white-space: nowrap; }
+.field--label-inline .field__item { float: left; padding: 0 1em 0 0; white-space: nowrap; }
 
 /* Responsive Images */
 
@@ -108,9 +108,9 @@ text-shadow: 1px 1px 0px #fff; }
 
 #main { margin-bottom: 20px; }
 
-.node.node-teaser { margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #d6d6d6; }
+.node.node--view-mode-teaser { margin-bottom: 20px; padding-bottom: 10px; border-bottom: 1px solid #d6d6d6; }
 
-.submitted { font-size: 11px; color: #666666; padding-bottom: 10px; margin-bottom: 10px; } 
+.node__submitted { font-size: 11px; color: #666666; padding-bottom: 10px; margin-bottom: 10px; }
 
 /* Featured */
 
@@ -120,7 +120,7 @@ text-shadow: 1px 1px 0px #fff; }
 
 #footer { clear: both; padding: 20px 0; border-top: 1px solid; font-size: .9em; }
 
-#credits { text-align: center; }
+.region-footer { text-align: center; }
 
 #footer .block { padding: 0 0 20px 0; }
 
@@ -173,7 +173,7 @@ ul.menu li {  margin: 0; }
 
 ul.links { font-size: 11px; color: #666666; }
 
-ul.links.inline li { padding:0 5px 0 0; margin:0 5px 0 0; border-right:1px solid #666666; }
+ul.links.inline li { padding:0 5px 0 0; margin:0 5px 0 0; }
 
 ul.links.inline li.last { border:none; }
 
@@ -335,6 +335,8 @@ html.js input.form-autocomplete { background-position: 100% 4px; }
 html.js input.throbbing { background-position: 100% -16px; }
 
 /* Comment form */
+
+section.field--type-comment { clear: both; padding: 10px 0; }
 
 .comment-form label { float: left; font-size: 0.929em; }
 
