@@ -11,7 +11,7 @@ use Drupal\Core\Form\FormStateInterface;
  * Implements hook_page_attachements_alter().
  * This will overwrite the default meta character type tag with HTML5 version.
  */
-function skeleton_page_attachments_alter(array &$page) {
+function skeletontheme_page_attachments_alter(array &$page) {
   $page['#attached']['html_head'][] = [
     [
       '#tag' => 'meta',
@@ -51,11 +51,11 @@ function skeleton_page_attachments_alter(array &$page) {
 
   // Add Javascript for responsive mobile menu
   if (theme_get_setting('responsive_menu_state')) {
-    $page['#attached']['library'][] = 'skeleton/mobile';
-    $switchwidth = (int) theme_get_setting('responsive_menu_switchwidth', 'skeleton');
-    $topoptiontext = theme_get_setting('responsive_menu_topoptiontext', 'skeleton');
-    $page['#attached']['drupalSettings']['skeleton']['topoptiontext'] = $topoptiontext;
-    $page['#attached']['drupalSettings']['skeleton']['switchwidth'] = $switchwidth;
+    $page['#attached']['library'][] = 'skeletontheme/mobile';
+    $switchwidth = (int) theme_get_setting('responsive_menu_switchwidth', 'skeletontheme');
+    $topoptiontext = theme_get_setting('responsive_menu_topoptiontext', 'skeletontheme');
+    $page['#attached']['drupalSettings']['skeletontheme']['topoptiontext'] = $topoptiontext;
+    $page['#attached']['drupalSettings']['skeletontheme']['switchwidth'] = $switchwidth;
   }
 }
 
@@ -67,7 +67,7 @@ function skeleton_page_attachments_alter(array &$page) {
  * @param $form_state
  *   The form state.
  */
-function skeleton_form_system_theme_settings_alter(&$form, FormStateInterface &$form_state) {
+function skeletontheme_form_system_theme_settings_alter(&$form, FormStateInterface &$form_state) {
 
   $form['mtt_settings'] = array(
     '#type' => 'vertical_tabs',
@@ -107,7 +107,7 @@ function skeleton_form_system_theme_settings_alter(&$form, FormStateInterface &$
 /**
  * Implements hook_preprocess_page().
  */
-function skeleton_preprocess_page(&$variables) {
+function skeletontheme_preprocess_page(&$variables) {
   $sidebar_first = !empty($variables['page']['sidebar_first']);
   $sidebar_second = !empty($variables['page']['sidebar_second']);
 
@@ -135,7 +135,7 @@ function skeleton_preprocess_page(&$variables) {
 /**
  * Implements hook_preprocess_breadcrumb().
  */
-function skeleton_preprocess_breadcrumb(&$variables) {
+function skeletontheme_preprocess_breadcrumb(&$variables) {
   if ($variables['breadcrumb']) {
     $request = \Drupal::request();
     $route_match = \Drupal::routeMatch();

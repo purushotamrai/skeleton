@@ -2,7 +2,7 @@ global-styling:
   Version: 1.x
   css:
     theme:
-      css/skeleton.css: {}
+      css/skeletontheme.css: {}
       css/style.css: {}
       css/buttons.css: {}
       css/layout.css: {}
@@ -21,7 +21,7 @@ color.preview:
 mobile:
   js:
     //cdn.rawgit.com/mattkersley/Responsive-Menu/master/jquery.mobilemenu.min.js: { type: external, minified: true }
-    js/skeleton.mobile.js: {}
+    js/skeletontheme.mobile.js: {}
   dependencies:
     - core/jquery
     - core/drupal

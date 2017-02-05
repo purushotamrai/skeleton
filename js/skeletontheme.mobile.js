@@ -1,16 +1,16 @@
 /**
  * @file
- * Attaches the behaviors for the skeleton theme for mobile.
+ * Attaches the behaviors for the skeletontheme theme for mobile.
  */
 
 (function ($, Drupal, drupalSettings) {
-	Drupal.behaviors.skeleton = {
+	Drupal.behaviors.skeletontheme = {
 		attach: function (context, settings) {
 			$("div#navigation ul.menu").mobileMenu({
 				prependTo: "div#navigation",
 				combine: true,
-				switchWidth: drupalSettings.skeleton.switchwidth,
-				topOptionText: drupalSettings.skeleton.topoptiontext
+				switchWidth: drupalSettings.skeletontheme.switchwidth,
+				topOptionText: drupalSettings.skeletontheme.topoptiontext
 			});
 		}
 	};

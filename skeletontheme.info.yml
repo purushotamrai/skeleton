@@ -1,6 +1,6 @@
-name: Skeleton
+name: Skeleton Theme
 type: theme
-description: Skeleton is a powerful, clean, responsive theme.
+description: Skeleton theme is a powerful, clean, responsive theme.
 core: 8.x
 screenshot: screenshot.png
 base theme: classy
@@ -26,4 +26,4 @@ regions:
 
 # Libraries
 libraries:
-    - skeleton/global-styling
+    - skeletontheme/global-styling

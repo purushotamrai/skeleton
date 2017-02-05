@@ -100,7 +100,7 @@ $info = array(
   'blend_target' => '#ffffff',
 
   // Preview files.
-	'preview_library' => 'skeleton/color.preview',
+	'preview_library' => 'skeletontheme/color.preview',
 	'preview_html' => 'color/preview.html',
 
   // Base file for image generation.
